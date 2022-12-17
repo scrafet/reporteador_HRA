@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "reporteador_HRA/1.0.0": {
+        "runtime": {
+          "reporteador_HRA.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "reporteador_HRA/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

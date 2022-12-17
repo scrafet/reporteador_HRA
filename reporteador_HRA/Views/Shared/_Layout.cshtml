@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="utf-8">
+        <title>Título del App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="HRA" name="author">
+        <!-- App favicon -->
+        <link href="assets/images/fav.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <!-- Iconos fontawesome -->
+        <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+        <!-- Styles -->
+        <script src="assets/js/plugins/jquery.min.js"></script>
+        <script src="assets/js/plugins/select2.min.js"></script>
+        
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/datatables.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/responsive.bootstrap5.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/css/jquery-confirm.min.css">
+        <!-- Select2 Custom -->
+        <link href="assets/css/select2custom.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+<!-- Begin page -->
+<div class="wrapper">
+@* <header> *@
+@*     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"> *@
+@*         <div class="container-fluid"> *@
+@*             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">reporteador_HRA</a> *@
+@*             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" *@
+@*                     aria-expanded="false" aria-label="Toggle navigation"> *@
+@*                 <span class="navbar-toggler-icon"></span> *@
+@*             </button> *@
+@*             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between"> *@
+@*                 <ul class="navbar-nav flex-grow-1"> *@
+@*                     <li class="nav-item"> *@
+@*                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> *@
+@*                     </li> *@
+@*                     <li class="nav-item"> *@
+@*                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
+@*                     </li> *@
+@*                 </ul> *@
+@*             </div> *@
+@*         </div> *@
+@*     </nav> *@
+@* </header> *@
+<partial name="_Navbar"/>
+<partial name="_Sidebar"/>
+
+
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        <partial name="_Footer"/>
+    </div>
+</footer>
+   </div>
+<!-- END wrapper -->   
+<script src="assets/js/plugins/vendor.min.js"></script>
+        <script src="assets/js/plugins/app.min.js"></script>
+        <script src="assets/js/plugins/datatables.min.js"></script>
+        <script src="assets/js/plugins/custom.js"></script>
+        <script src="assets/js/plugins/sweetalert2.all.min.js"></script>
+        <script src="assets/js/plugins/moment.js"></script>
+        <script src="assets/js/plugins/datetime.js"></script>
+        <script src="assets/js/plugins/jquery-confirm.min.js"></script>
+
+        <!-- Select2 custom -->
+        <script src="assets/js/plugins/select2custom.js"></script>
+        <!-- Idioma timepicker -->
+        <script type="text/javascript" src="assets/js/plugins/bootstrap-datepicker.es.min.js"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

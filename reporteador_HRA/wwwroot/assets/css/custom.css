@@ -1,0 +1,371 @@
+#activeadmin{
+	display: none;
+}
+.tableHeadCustom{
+  /*background-image:url("../images/bg-footer2.jpg");*/
+  background: #C9AEC8;
+  color:#000;
+}
+.tableHeadCustomPage{
+  text-align:center;
+  font-size:13px;
+  width: 100%;
+  background: #F3F4F8;
+  color:#000;
+}
+.bgMenuCustom{
+  /*background-color:#69A1FF;*/
+  /*background-image:url("../images/bg-pattern-light.svg");
+	color: #fff;
+  background: radial-gradient(circle at bottom right, #0c93ec, #8ccbee);*/
+}
+
+.buttonIniciarSesionCustom{
+  background-color:#85D3EF;
+  color:#252323;
+  opacity: 1;
+  font-weight: bold;
+}
+.buttonIniciarSesionCustom:hover{
+  color: #252323;
+  background-color:#6bcbee;
+  /*opacity: 0.8;*/
+  transition: 0.3s;
+}
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  /*background: rgb(23, 22, 22);*/
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: opacity 0.3s linear;
+  pointer-events: none;
+}
+.selectedProgMedCustom a{
+  background-color: #39A1E5;
+  border-left: solid 1px #0c93ec;
+  border-radius: 0px 5px 5px 0px;
+  pointer-events: none;
+  color:#fff;
+  float:right;
+}
+.selectedProgMedCustom a i{
+  display:block;
+  color: #fff;
+  width:25px;
+  height:40px;
+  float:left;
+  padding-top:10px;
+}
+.iconInactive{
+  display:block;
+  width:25px;
+  height:40px;
+  float:left;
+  padding-top:10px;
+  color:#727cf5;
+}
+
+#bg-navAdmin{
+  /*background-color: #468eec;*/
+  /*background: url(../images/bg-menu3.jpg), url(../images/bg-menu2.png), rgb(138, 138, 138);
+  background-size: cover;
+  background-blend-mode: screen;*/
+  color: #fff;
+  background: #793576;
+  /*background: #580354;*/
+}
+#bg-navIndex{
+  color: #fff;
+  background: #580354;
+}
+
+@media all and (max-width: 760px) {
+  #logoNavCustom{
+    height:85%;
+    width:100%;
+    position:absolute;
+    background: url(../images/logo2.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    left:30%;
+  }
+}
+#titleCustomServicio{
+  display:block;
+  margin-top:14px;
+  font-size:15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media all and (max-width: 760px) {
+  #titleCustomServicio{
+    display:none;
+  }
+}
+#tableVerModal{
+  width: 110px;
+  color:rgb(85, 85, 85);
+  background-color:#F7F7F7;
+}
+#tableVerModalBorder{
+  border: solid 1px #E2E2E2;
+}
+.input-group > .twitter-typeahead {
+  flex: 1 1 auto;
+  width: auto;
+}
+#desBtnTable i{
+/*  background-color: rgb(146, 146, 146);*/
+  /*border: solid 1px rgb(146, 146, 146);*/
+   box-shadow: none;
+   color:rgb(146, 146, 146) !important;
+}
+
+#tableTdCupoCitas{
+  background-color:#ececec;
+  color:#000000;
+  width:30px;
+  height:30px;
+  padding: 5px;
+  text-align: center;
+  -webkit-box-shadow: 0 6px 6px -6px #222;
+  -moz-box-shadow: 0 6px 6px -6px #222;
+  box-shadow: 0 6px 6px -6px #222;
+  display: block;
+  margin-left: -15px;
+  z-index:999;
+  position: absolute;
+}
+/*#tableTrCitas{
+  font-size:13px;
+  text-align:center;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+}*/
+#tableCupoCita>:not(caption)>*>*{
+  padding:.15rem .15rem;
+}
+#tableCupoCita{
+  border-right:solid 1px #e2e6e9;
+  border-left:solid 1px #e2e6e9;
+  border-bottom:solid 2px #e2e6e9;
+
+}
+#btnAccionesDtable{
+  text-align:center;
+}
+#btnAccionesDtable button{
+  width:36px;
+  height:25px !important;
+  margin-right:-2px;
+  /*background-color: red;*/
+}
+#btnAccionesDtable button i{
+  display:block;
+  margin-left:-5px;
+  margin-top:-2px;
+  font-size:17px;
+}
+#btnAccionesDtable .btnVer i{
+  color: #86A637;
+}
+#btnAccionesDtable .btnEditar i{
+  color: #3E828A;
+}
+#btnAccionesDtable .btnEliminar i{
+  color: #F15B5F;
+}
+#btnAccionesDtable .btnCheck i{
+  color: #00CB91;
+}
+#btnAccionesDtable .btnActualizarGal i{
+  color: #00CB91;
+}
+#btnAccionesDtable .btnResetear i{
+  color: #f3ebb0;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+}
+
+#btnAccionesDtable button:hover {
+  transform: translateY(-1px);
+}
+/* Css Custom para Modales atencion enfermeras y atencion medica */
+@media all and (min-width: 760px) {
+  #inputWidthCustomAteEnf{
+    width:88%;
+  }
+  #btnWidthCustomAteEnf{
+    width:12%;
+  }
+
+  #inputWidthCustomAteMedDiag{
+    width:65%;
+  }
+  #inputWidthCustomAteMedTip{
+    width:20%;
+  }
+  #btnWidthCustomAteMed{
+    width:15%;
+  }
+
+  #inputWidthCustAteMedDiagUpd{
+    width:68%;
+  }
+  #inputWidthCustAteMedTipUpd{
+    width:20%;
+  }
+  #btnWidthCustAteMedUpd{
+    width:12%;
+  }
+}
+@media all and (max-width: 768px) {
+  #inputWidthCustomAteEnf{
+    -webkit-box-flex:0;
+    -ms-flex:0 0 auto;
+    flex:0 0 auto;
+    width:100%
+  }
+  #btnWidthCustomAteEnf{
+    -webkit-box-flex:0;
+        -ms-flex:0 0 auto;
+        flex:0 0 auto;
+        width:100%
+  }
+
+  #inputWidthCustomAteMedDiag{
+    -webkit-box-flex:0;
+        -ms-flex:0 0 auto;
+        flex:0 0 auto;
+        width:100%
+  }
+  #inputWidthCustomAteMedTip{
+    -webkit-box-flex:0;
+        -ms-flex:0 0 auto;
+        flex:0 0 auto;
+        width:100%
+  }
+  #btnWidthCustomAteMed{
+    -webkit-box-flex:0;
+        -ms-flex:0 0 auto;
+        flex:0 0 auto;
+        width:100%
+  }
+}
+
+#printCustomInterconsulta{
+  background-color: red;
+}
+
+#tbodyProcedimientoGal{
+  background-color:#EEF2F7;
+}
+#tbodyDiagnosticoGal{
+  background-color:#EEF2F7;
+}
+#tbodyProcedimientoGalUpd{
+  background-color:#EEF2F7;
+}
+#tbodyDiagnosticoGalUpd{
+  background-color:#EEF2F7;
+}
+#bg-image-index{
+  background-image:url("../images/background-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#fff;
+  width:100%;
+  height:500px;
+}
+@media all and (min-width: 992px) {
+  #menuInicial{
+    margin-left:68%;
+    font-size:18px;
+  }
+}
+@media all and (min-width: 992px) {
+  #imgMenuInicial{
+    margin-left:65%;
+  }
+}
+.footer-custom{
+  border-top:1px solid rgba(152,166,173,.2);
+  bottom:0;
+  padding:19px 24px 20px;
+  position:absolute;
+  right:0;
+  color:#98a6ad;
+  background-color: #fff;
+  /*color:#000;*/
+
+  /*color: #fff;
+  text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;*/
+}
+body[data-leftbar-theme=dark] .side-nav .menuitem-active .active{
+  color:#000!important;
+  background-color:#F3F4F8;
+  box-shadow: 0 0 10px #fff;
+  text-shadow: none;
+  pointer-events:none;
+  border-left: none;
+  /*border-left: solid 6px #317298;*/
+  border-left: solid 6px #317298;
+}
+.customDt .dataTables_filter {  
+  /* background-color: blue; */
+  width:20%;
+  margin-bottom:10px;  
+  
+}
+.customDt .dataTables_length{
+  /* background-color: blue;  */
+  min-width:20%;
+  display:block;
+  float: left;
+  margin-bottom: 10px;
+  text-align:left;
+  margin-right:10px;
+}
+
+.customDt .dataTables_info{
+  /* background-color: red; */
+  display:block;
+  min-width:30%;
+  float: left;
+  margin-top:-5px;  
+  text-align:right;
+}
+.customDt .dataTables_paginate{
+  /* background-color: blue; */
+  min-width:40%;
+  display:block;
+  float: right;
+  margin-bottom: 10px;
+}
+@media all and (min-width: 475px) {
+  .btnNuevoCustom{
+    /* background-color: red;  */
+    min-width:10%;
+    position:absolute;
+    float:right;     
+    right: 2%;
+    min-width: 50%;
+    text-align: right;
+  }
+}
+@media all and (max-width: 475px) {
+  .btnNuevoCustom{
+    /* background-color: red;  */
+    min-width:10%;    
+    right: 2%;
+    min-width: 50%;
+    margin-bottom:10px;  
+    text-align: center;
+  }
+}
